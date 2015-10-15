@@ -21,15 +21,15 @@ or
 
 <h2>  Command List: </h2> 
 
-*graph=pygraf.graf(n,mas)     
-*graph.check_orient()
-*graph.dfs(v,0)
-*graph.print_dfs()
-*graph.comp(True/False)
-*graph.minwayves_wihtout_cicly(v,u)
-*graph.minwayprint_wihtout_cicly(v,u)
-*graph.add_rebro(v,u,c)
-*graph.del_rebro(v,u)
+* graph=pygraf.graf(n,mas)     
+* graph.check_orient()
+* graph.dfs(v,0)
+* graph.print_dfs()
+* graph.comp(True/False)
+* graph.minwayves_wihtout_cicly(v,u)
+* graph.minwayprint_wihtout_cicly(v,u)
+* graph.add_rebro(v,u,c)
+* graph.del_rebro(v,u)
 
 
 <h2>  pygraf.graf(n,mas) </h2> 
@@ -39,10 +39,8 @@ or
 
 Example init graph:
 
-<syntaxhighlight lang=bash>
-
-   graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
-
+<syntaxhighlight lang=c>
+graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
 </syntaxhighlight>
 
 <h2>  graph.check_orient() </h2> 
