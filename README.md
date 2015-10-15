@@ -96,9 +96,8 @@ Return Connected component and List all component:
     print(graph.comp(True))#print "1->2" "1->3" "1"
 </syntaxhighlight>
 if False:
-
 <syntaxhighlight lang=bash>
-    
+
     graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
     print(graph.comp(False))#print "1"
 </syntaxhighlight>
@@ -108,11 +107,10 @@ if False:
 Print min-cost from v to u
 
 Example init graph:
-
 <syntaxhighlight lang=bash>
-   
-   graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
-   graph.minwayves_wihtout_cicly(2,3)#print "4"
+
+    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
+    graph.minwayves_wihtout_cicly(2,3)#print "4"
 </syntaxhighlight>
 
 <h2>  graph.minwayprint_wihtout_cicly(v,u) </h2> 
@@ -120,11 +118,10 @@ Example init graph:
 Print min-cost from v to u
 
 Example init graph:
-
 <syntaxhighlight lang=bash>
-   
-   graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
-   graph.minwayprint_wihtout_cicly(2,3)#print "2 3"
+
+    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
+    graph.minwayprint_wihtout_cicly(2,3)#print "2 3"
 </syntaxhighlight>
 
 <h2>  graph.add_rebro(v,u,c) </h2> 
@@ -134,9 +131,9 @@ Add path from "v" to "u" cost "c"
 Example init graph:
 
 <syntaxhighlight lang=bash>
-   
-   graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
-   graph.add_rebro(2,1,4)#add path from 2 to 1 cost 4
+
+    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
+    graph.add_rebro(2,1,4)#add path from 2 to 1 cost 4
 </syntaxhighlight>
 
 <h2>  graph.del_rebro(v,u) </h2> 
@@ -146,7 +143,7 @@ Delete path from "v" to "u"
 Example init graph:
 
 <syntaxhighlight lang=bash>
-   
-   graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
-   graph.del_rebro(1,2)#delete path from «1» to «2»
+
+    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
+    graph.del_rebro(1,2)#delete path from «1» to «2»
 </syntaxhighlight>
