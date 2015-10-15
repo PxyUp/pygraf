@@ -40,7 +40,7 @@ or
 
 Example init graph:
 
-<syntaxhighlight lang=c>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
 </syntaxhighlight>
@@ -51,7 +51,7 @@ Checking directed graph
 
 Example init graph:
 
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
     graph.check_orient()#return true - Directed; False - Undirected
@@ -63,7 +63,7 @@ Starting DFS algoritm from v-point
 
 Example init graph:
 
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
     graph.dfs(2,0)#Nothing return
@@ -75,7 +75,7 @@ Return result DFS algoritm from v-point
 
 Example init graph:
 
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
     graph.dfs(2,0)#Nothing return
@@ -90,13 +90,13 @@ if True:
 
 Return Connected component and List all component:
 
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
     print(graph.comp(True))#print "1->2" "1->3" "1"
 </syntaxhighlight>
 if False:
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
     print(graph.comp(False))#print "1"
@@ -107,7 +107,7 @@ if False:
 Print min-cost from v to u
 
 Example init graph:
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
     graph.minwayves_wihtout_cicly(2,3)#print "4"
@@ -118,7 +118,7 @@ Example init graph:
 Print min-cost from v to u
 
 Example init graph:
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
     graph.minwayprint_wihtout_cicly(2,3)#print "2 3"
@@ -130,7 +130,7 @@ Add path from "v" to "u" cost "c"
 
 Example init graph:
 
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
     graph.add_rebro(2,1,4)#add path from 2 to 1 cost 4
@@ -142,7 +142,7 @@ Delete path from "v" to "u"
 
 Example init graph:
 
-<syntaxhighlight lang=bash>
+<syntaxhighlight lang=python>
 
     graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
     graph.del_rebro(1,2)#delete path from «1» to «2»
