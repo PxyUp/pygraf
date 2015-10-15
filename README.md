@@ -12,6 +12,7 @@
 
     $ pip install pygraf
 </syntaxhighlight>
+
 or
 
 <syntaxhighlight lang=bash>
@@ -40,7 +41,8 @@ or
 Example init graph:
 
 <syntaxhighlight lang=c>
-graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
+
+    graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
 </syntaxhighlight>
 
 <h2>  graph.check_orient() </h2> 
@@ -50,8 +52,9 @@ Checking directed graph
 Example init graph:
 
 <syntaxhighlight lang=bash>
-   graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
-   graph.check_orient()#return true - Directed; False - Undirected
+
+    graph=pygraf.graf(3,[[1,2,2],[1,3,4]])
+    graph.check_orient()#return true - Directed; False - Undirected
 </syntaxhighlight>
 
 <h2>  graph.dfs(v,0) </h2> 
@@ -61,8 +64,9 @@ Starting DFS algoritm from v-point
 Example init graph:
 
 <syntaxhighlight lang=bash>
-   graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
-   graph.dfs(2,0)#Nothing return
+
+    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
+    graph.dfs(2,0)#Nothing return
 </syntaxhighlight>
 
 <h2>  graph.print_dfs() </h2> 
@@ -72,9 +76,10 @@ Return result DFS algoritm from v-point
 Example init graph:
 
 <syntaxhighlight lang=bash>
-   graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
-   graph.dfs(2,0)#Nothing return
-   print(graph.print_dfs())#print [False,True,True]
+
+    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
+    graph.dfs(2,0)#Nothing return
+    print(graph.print_dfs())#print [False,True,True]
 </syntaxhighlight>
 
 <h2>  graph.comp(True/False) </h2>
@@ -86,14 +91,16 @@ if True:
 Return Connected component and List all component:
 
 <syntaxhighlight lang=bash>
-   graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
-   print(graph.comp(True))#print "1->2" "1->3" "1"
+
+    graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
+    print(graph.comp(True))#print "1->2" "1->3" "1"
 </syntaxhighlight>
 if False:
 
 <syntaxhighlight lang=bash>
-   graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
-   print(graph.comp(False))#print "1"
+    
+    graph=pygraf.graf(3,[[2,1],[2,3],[3,1],[1,3],[1,2],[3,2]])
+    print(graph.comp(False))#print "1"
 </syntaxhighlight>
 
 <h2>  graph.minwayves_wihtout_cicly(v,u) </h2> 
@@ -103,6 +110,7 @@ Print min-cost from v to u
 Example init graph:
 
 <syntaxhighlight lang=bash>
+   
    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
    graph.minwayves_wihtout_cicly(2,3)#print "4"
 </syntaxhighlight>
@@ -114,6 +122,7 @@ Print min-cost from v to u
 Example init graph:
 
 <syntaxhighlight lang=bash>
+   
    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
    graph.minwayprint_wihtout_cicly(2,3)#print "2 3"
 </syntaxhighlight>
@@ -125,6 +134,7 @@ Add path from "v" to "u" cost "c"
 Example init graph:
 
 <syntaxhighlight lang=bash>
+   
    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
    graph.add_rebro(2,1,4)#add path from 2 to 1 cost 4
 </syntaxhighlight>
@@ -136,6 +146,7 @@ Delete path from "v" to "u"
 Example init graph:
 
 <syntaxhighlight lang=bash>
+   
    graph=pygraf.graf(3,[[1,2,2],[2,3,4]])
    graph.del_rebro(1,2)#delete path from «1» to «2»
 </syntaxhighlight>
