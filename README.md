@@ -34,8 +34,8 @@ or
 
 <h2>  pygraf.graf(n,mas) </h2> 
 
-1. n - count of point
-2. mas - massive of [First point,Second point,Cost]
+* n - count of point
+* mas - massive of [First point,Second point,Cost]
 
 Example init graph:
 
