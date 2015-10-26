@@ -128,8 +128,8 @@ class graf:
                 cur=p[cur]
             path.reverse()
             print('Path from',u,'to',v);
-            for j in range(len(path)):
-                print(path[j],end=' ')
+            for j in path:
+                print(j,end=' ')
             print()
     def print_graff(self):
         print(self.__graff)
